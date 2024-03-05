@@ -354,6 +354,7 @@
 }
 
 #Frequently .accordion-button:not(.collapsed) {
+    color: #0D0D0D !important;
     box-shadow: none !important;
     padding-bottom: 12px !important;
 }
