@@ -521,7 +521,7 @@
     }
 
     .cross .line {
-        transform: rotate(50deg) translate(17px, 14px);
+        transform: rotate(50deg) translate(17px, 15px);
     }
 
     .cross .line1 {
