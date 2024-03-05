@@ -469,7 +469,7 @@
 
 @media (min-width:1200px) {
     .min_vh_100 {
-        height: calc(100vh-90px);
+        height: calc(100vh-90px) !important;
     }
 }
 
