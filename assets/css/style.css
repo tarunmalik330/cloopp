@@ -65,6 +65,8 @@
 
 /* ---------------------------------back-to-top------------------------------------ */
 .BackToTop {
+    display: none;
+    position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 6 !important;
