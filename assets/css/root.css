@@ -78,4 +78,56 @@
         --fs-8xl: 40px !important;
         --fs-5lg: 29px !important;
     }
+
+    .pb_37 {
+        padding-bottom: unset;
+    }
+
+    .mw_530 {
+        max-width: 380px;
+    }
+
+    .mw_146 {
+        max-width: 127px;
+    }
+
+    .padding_newsletter {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer_padding {
+        padding-top: 18px;
+    }
+
+    .faq_padding {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .mw_357 {
+        max-width: 300px;
+    }
+
+    .opacity_40 {
+        opacity: 40%;
+    }
+
+    .mw_213 {
+        max-width: 138px;
+    }
+
+    .recycle_ellips {
+        bottom: -4%;
+        right: -3%;
+    }
+
+    .recycling_padding {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .pt_73 {
+        padding-top: unset;
+    }
 }
