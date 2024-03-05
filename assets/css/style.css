@@ -140,6 +140,7 @@
     left: 0;
     height: 2px;
     background-color: #fff;
+    opacity: 90%;
     bottom: 0;
     transition: all 300ms linear;
 }
@@ -562,5 +563,9 @@
 
     .overflow_hidden {
         overflow: hidden;
+    }
+
+    .pt_73 {
+        padding-top: unset;
     }
 }
