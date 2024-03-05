@@ -1,0 +1,81 @@
+:root {
+    --fs-4sm: 14px;
+    --fs-6sm: 16px;
+    --fs-8sm: 18.92px;
+    --fs-1md: 21.62px;
+    --fs-4md: 24px;
+    --fs-lg: 32px;
+    --fs-3lg: 35.2px;
+    --fs-5lg: 52px;
+    --fs-2xl: 62.4px;
+    --fs-4xl: 64px;
+    --fs-8xl: 80px;
+}
+
+.fs_4sm {
+    font-size: var(--fs-4sm);
+}
+
+.fs_6sm {
+    font-size: var(--fs-6sm);
+}
+
+.fs_8sm {
+    font-size: var(--fs-8sm);
+}
+
+.fs_1md {
+    font-size: var(--fs-1md);
+}
+
+.fs_4md {
+    font-size: var(--fs-4md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_3lg {
+    font-size: var(--fs-3lg);
+}
+
+.fs_5lg {
+    font-size: var(--fs-5lg);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs_8xl {
+    font-size: var(--fs-8xl);
+}
+
+@media (max-width:1200px) {
+    :root {
+        --fs-4xl: 60px !important;
+        --fs-8xl: 60px !important;
+        --fs-5lg: 36px !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    :root {
+        --fs-5lg: 43px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-6sm: 14px !important;
+        --fs-4md: 18px !important;
+        --fs-4xl: 38px !important;
+        --fs-8xl: 40px !important;
+        --fs-5lg: 29px !important;
+    }
+}
