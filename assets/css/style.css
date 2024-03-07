@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Over+the+Rainbow&display=swap');
-@import url('./root.css');
 
 * {
     padding: 0;
@@ -23,7 +22,6 @@
 
 /* --------------------------Preloader------------------------ */
 .typewriter h1 {
-    margin: 0 auto;
     letter-spacing: .15em;
     text-shadow: 2px 2px #bcb6b6;
     animation:
@@ -56,7 +54,6 @@
 .prelader {
     transition: 300ms ease-in;
     z-index: 9;
-    background: rgba(0, 115, 177, 1);
 }
 
 .pointer_event_none {
@@ -81,7 +78,9 @@
 }
 
 @keyframes mover {
-    0% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
 
@@ -89,12 +88,53 @@
         transform: translateY(-7px);
     }
 
-    100% {
-        transform: translateY(0px);
-    }
 }
 
-/* ---------------------------------line-height-------------------------------- */
+/* ---------------------------------common classes-------------------------------- */
+.fs_4sm {
+    font-size: var(--fs-4sm);
+}
+
+.fs_6sm {
+    font-size: var(--fs-6sm);
+}
+
+.fs_8sm {
+    font-size: var(--fs-8sm);
+}
+
+.fs_1md {
+    font-size: var(--fs-1md);
+}
+
+.fs_4md {
+    font-size: var(--fs-4md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_3lg {
+    font-size: var(--fs-3lg);
+}
+
+.fs_5lg {
+    font-size: var(--fs-5lg);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs_8xl {
+    font-size: var(--fs-8xl);
+}
+
 .lh_110 {
     line-height: 110%;
 }
@@ -162,16 +202,8 @@
     background-repeat: no-repeat;
 }
 
-.lspacing_1 {
-    letter-spacing: -1%;
-}
-
 .mw_180 {
     max-width: 180px;
-}
-
-.mw_530 {
-    max-width: 530px;
 }
 
 .mw_130 {
@@ -214,10 +246,6 @@
 }
 
 /* < !-- ----------------------------Greener World------------------------- --> */
-.mw_675 {
-    max-width: 675px;
-}
-
 .mw_330 {
     max-width: 330px;
 }
@@ -277,13 +305,10 @@
 }
 
 #recycling .accordion-button {
-    padding: 16px !important;
-    background: transparent !important;
     border-radius: 10px !important;
 }
 
 #recycling .accordion-body {
-    padding-top: 0px !important;
     padding-left: 80px;
 }
 
@@ -298,21 +323,11 @@
 
 #recycling .accordion-item {
     border: 1px solid #A4A4A4 !important;
-    margin-bottom: 16px !important;
-    background-color: transparent !important;
     border-radius: 10px !important;
-}
-
-.mw_402 {
-    max-width: 402px;
 }
 
 .gap_20 {
     gap: 20px;
-}
-
-.mw_508 {
-    max-width: 508px
 }
 
 .mw_213 {
@@ -325,23 +340,13 @@
 }
 
 /* -------------------------------------faq----------------------------------- */
-.faq_padding {
-    padding-top: 50px;
-    padding-bottom: 48px;
-}
-
 #Frequently .accordion-button::after {
     background-image: url("../images/png/collapsedArrow.png") !important;
 }
 
 #Frequently .accordion-button {
-    padding: 16px !important;
     background: transparent !important;
     border-radius: 10px !important;
-}
-
-#Frequently .accordion-body {
-    padding-top: 0px !important;
 }
 
 #Frequently .accordion-button:not(.collapsed) {
@@ -356,17 +361,7 @@
 
 #Frequently .accordion-item {
     border: 1px solid #C5C5C5 !important;
-    margin-bottom: 16px !important;
-    background-color: transparent !important;
     border-radius: 10px !important;
-}
-
-.mw_758 {
-    max-width: 758px;
-}
-
-.mw_957 {
-    max-width: 957px;
 }
 
 .mw_286 {
@@ -386,10 +381,6 @@
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 20px;
-}
-
-.mw_503 {
-    max-width: 503px;
 }
 
 ::placeholder {
@@ -420,14 +411,6 @@
 }
 
 /*------------------------------- footer--------------------------- */
-.footer_padding {
-    padding-top: 49px;
-}
-
-.mw_136 {
-    max-width: 136px;
-}
-
 .footer_link {
     color: #CFCFCF;
     transition: .3s linear;
@@ -447,7 +430,6 @@
 
 .footer_line {
     border: 0.5px solid #FFFFFF;
-    opacity: 70%;
 }
 
 .bg_black {
@@ -458,43 +440,26 @@
     opacity: 90%;
 }
 
-@media (min-width:1200px) {
-    .min_vh_100 {
-        height: calc(100vh-90px) !important;
-    }
+/* -----------------------root--------------------- */
+:root {
+    --fs-4sm: 14px;
+    --fs-6sm: 16px;
+    --fs-8sm: 18.92px;
+    --fs-1md: 21.62px;
+    --fs-4md: 24px;
+    --fs-lg: 32px;
+    --fs-3lg: 35.2px;
+    --fs-5lg: 52px;
+    --fs-2xl: 62.4px;
+    --fs-4xl: 64px;
+    --fs-8xl: 80px;
 }
 
-@media (min-width:992px) {
-    .mw_448 {
-        max-width: 448px;
-    }
-
-    .mw_471 {
-        max-width: 471px;
-    }
-
-    .mw_501 {
-        max-width: 501px;
-    }
-
-    .mw_480 {
-        max-width: 480px;
-    }
-
-    .mw_610 {
-        max-width: 610px;
-    }
-
-    .mw_345 {
-        max-width: 345px;
-    }
-
-    .mw_513 {
-        max-width: 513px;
-    }
-
-    .mw_593 {
-        max-width: 593px;
+@media (max-width:1200px) {
+    :root {
+        --fs-4xl: 60px !important;
+        --fs-8xl: 60px !important;
+        --fs-5lg: 36px !important;
     }
 }
 
@@ -548,5 +513,54 @@
 
     .overflow_hidden {
         overflow: hidden;
+    }
+
+    :root {
+        --fs-5lg: 43px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-6sm: 14px !important;
+        --fs-4md: 18px !important;
+        --fs-4xl: 38px !important;
+        --fs-8xl: 40px !important;
+        --fs-5lg: 25px !important;
+    }
+
+    .pb_37 {
+        padding-bottom: unset;
+    }
+
+    .mw_146 {
+        max-width: 127px;
+    }
+
+    .padding_newsletter {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .mw_357 {
+        max-width: 300px;
+    }
+
+    .opacity_40 {
+        opacity: 40%;
+    }
+
+    .mw_213 {
+        max-width: 138px;
+    }
+
+    .recycle_ellips {
+        bottom: -4%;
+        right: -3%;
+    }
+
+    .recycling_padding {
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
 }
