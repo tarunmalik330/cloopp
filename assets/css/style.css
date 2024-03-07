@@ -463,7 +463,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .mobile_view {
         position: fixed;
         left: -100%;
