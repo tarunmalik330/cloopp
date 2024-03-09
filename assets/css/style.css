@@ -335,7 +335,7 @@
 }
 
 .recycle_ellips {
-    bottom: -8%;
+    bottom: -16%;
     right: -14%;
 }
 
@@ -455,7 +455,7 @@
     --fs-8xl: 80px;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1400px) {
     :root {
         --fs-4xl: 60px !important;
         --fs-8xl: 60px !important;
